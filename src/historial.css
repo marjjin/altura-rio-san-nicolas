@@ -1,0 +1,166 @@
+/* Panel último dato profesional */
+.panel-ultimo-dato {
+  width: 100%;
+  max-width: 420px;
+  margin: 1.5rem auto 1.5rem auto;
+  background: #f9fbfd;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px #0002;
+  padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.panel-ultimo-titulo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 0.7rem;
+  letter-spacing: 1px;
+  color: #0a3d62;
+}
+.panel-ultimo-icono-valor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 0.5rem;
+}
+.panel-ultimo-icono {
+  font-size: 1.7rem;
+  display: inline-block;
+}
+.panel-ultimo-valor {
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1;
+}
+.panel-ultimo-mts {
+  font-size: 1rem;
+  color: #888;
+}
+.panel-ultimo-fecha {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.3rem;
+}
+.panel-ultimo-fecha span {
+  font-weight: 500;
+}
+.panel-ultimo-variacion {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.panel-ultimo-variacion-num {
+  font-size: 0.98rem;
+  color: #888;
+}
+.panel-ultimo-detalle {
+  font-size: 0.95rem;
+  color: #888;
+  margin-top: 0.5rem;
+  border-top: 1px solid #e1e7ed;
+  padding-top: 0.5rem;
+}
+@media (max-width: 600px) {
+  .panel-ultimo-dato {
+    max-width: 98vw;
+    padding: 1rem 0.2rem;
+  }
+  .panel-ultimo-valor {
+    font-size: 1.3rem;
+  }
+}
+// Estilos CSS para tabla y layout inspirados en Prefectura Naval
+// Incluye responsividad y detalles visuales modernos
+
+body {
+  background: #f4f8fb;
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #1a2636;
+}
+
+.contenedor-historico {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px 0 #0001;
+  padding: 2rem 1rem 2rem 1rem;
+}
+
+.titulo-historico {
+  color: #0a3d62;
+  text-align: center;
+  margin-bottom: 2.2rem;
+  font-size: 2.3rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px #0001;
+}
+
+.tabla-historico {
+  width: 100%;
+  border-collapse: collapse;
+  background: #f9fbfd;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 1rem;
+}
+
+.filtros-rango {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+.filtros-rango label {
+  margin: 0 10px;
+  cursor: pointer;
+}
+.filtros-rango input[type="radio"] {
+  accent-color: #0a3d62;
+}
+
+.tabla-historico th,
+.tabla-historico td {
+  border: 1px solid #e1e7ed;
+  padding: 12px 10px;
+  text-align: center;
+}
+
+.tabla-historico th {
+  background: #0a3d62;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.13rem;
+  letter-spacing: 0.5px;
+}
+
+.tabla-historico tr:nth-child(even) {
+  background: #eaf1f8;
+}
+
+@media (max-width: 900px) {
+  .contenedor-historico {
+    max-width: 99vw;
+    padding: 1rem 0.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .titulo-historico {
+    font-size: 1.2rem;
+  }
+  .tabla-historico th,
+  .tabla-historico td {
+    padding: 6px 2px;
+    font-size: 0.95rem;
+  }
+}
